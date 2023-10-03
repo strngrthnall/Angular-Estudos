@@ -1,0 +1,43 @@
+.lista
+  &--header
+    background-color: #060b2c
+    padding: 16px
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #513B6D
+
+    &__input
+      all: unset
+      padding: 4px
+      background-color: #0a124d
+      border-radius: 4px
+      width: 50%
+
+    &__btn
+      & > button
+        padding: 4px
+        border-radius: 4px
+
+      & > button:hover
+        cursor: pointer
+
+      &__add
+        all: unset
+        margin-right: 8px
+        border: 1px solid #513B6D
+        background-color: #513B6D
+
+      &__rmv
+        all: unset
+        border: 1px solid #ff0000
+        background-color: #ff0000
+  &--body
+    &__items
+      display: flex
+      justify-content: space-between
+      margin: 8px
+      border-bottom: 1px solid #060B2C
+
+    &__items:hover
+      cursor: pointer
+

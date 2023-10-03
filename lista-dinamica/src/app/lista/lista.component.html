@@ -1,0 +1,17 @@
+<div class="lista">
+  <div class="lista--header">
+    <input [(ngModel)]="newItem" class="lista--header__input" type="text">
+    <div class="lista--header__btn">
+      <button (click)="adicionaLista()" class="lista--header__btn__add">Adicionar Item</button>
+      <button (click)="apagarLista()" class="lista--header__btn__rmv">Apagar Lista</button>
+    </div>
+  </div>
+  <div class="lista--body">
+    <ul>
+      <li (click)="riscarItem()" [ngStyle]="{'text-decoration': itemStyle }" class="lista--body__items" *ngFor=" let item of list">
+        <span>{{item}}</span>
+        <span>{{time}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
